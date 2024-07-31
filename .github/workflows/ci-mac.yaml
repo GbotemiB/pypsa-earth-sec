@@ -65,6 +65,7 @@ jobs:
 
     - name: Test snakemake workflow
       run: |
+        conda install ipopt
         conda list
         snakemake --cores all run_test
 
